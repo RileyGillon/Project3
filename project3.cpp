@@ -155,13 +155,6 @@ public:
             cin >> request[i];
         }
         
-        // Print the request
-        cout << processId;
-        for (int i = 0; i < numResources; i++) {
-            cout << " " << request[i];
-        }
-        cout << endl;
-        
         // First check if the current system is safe
         if (!isSafe(available, allocation)) {
             cout << "The current system is in unsafe state." << endl;
